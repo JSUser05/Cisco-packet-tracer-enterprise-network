@@ -1,2 +1,5 @@
 # Cisco-packet-tracer-enterprise-network
-This project follows the set up and the implementation of an enterprise network on Cisco Packet Tracer. The project also includes a 2 write-ups one describing the network and possible attack surface the other proof of configuration.
+This project is designed to demonstrate the configuration of an enterprise network. The network utilizes network segmentation via virtual local area network (VLAN) to isolate traffic, and restricts broadcast domains. A Dynamic Host Configuration Protocol (DHCP) server is set up to automatically allocate IP addresses, gateways, subnet masks, and lease time. A Domain Name System (DNS) server to resolve domain names to IPs and allow for previous DNS queries to be cached, allowing for users to experience faster connection to websites. A Web server to host the website of the enterprise. And the Web server and DNS server are placed in a demilitarized zone (DMZ) with restricted access because they are forward facing to the internet. Switches that have Access Control Lists (ACL) bound to them to control network traffic. Finally, a network controller to monitor subnets, apply ACLs, and optimize network traffic.
+
+# Topology of Network
+<img width="982" height="558" alt="image" src="https://github.com/user-attachments/assets/49a50ae4-00c6-4f1c-bc7d-93442e0bd26a" />
